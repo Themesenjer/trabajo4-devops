@@ -4,16 +4,27 @@ class TaskManager:
         self.tasks = []
 
     def add_task(self, task):
-        self.tasks.append(task)
+
+        self.tasks.append({
+            "name": task,
+            "completed": False
+        })
+
+    def complete_task(self, index):
+
+        self.tasks[index]["completed"] = True
 
     def list_tasks(self):
         return self.tasks
 
 
 if __name__ == "__main__":
+
     manager = TaskManager()
 
     manager.add_task("Estudiar DevOps")
     manager.add_task("Practicar GitHub")
+
+    manager.complete_task(0)
 
     print(manager.list_tasks())

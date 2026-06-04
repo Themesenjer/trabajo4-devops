@@ -1,0 +1,19 @@
+class TaskManager:
+
+    def __init__(self):
+        self.tasks = []
+
+    def add_task(self, task):
+        self.tasks.append(task)
+
+    def list_tasks(self):
+        return self.tasks
+
+
+if __name__ == "__main__":
+    manager = TaskManager()
+
+    manager.add_task("Estudiar DevOps")
+    manager.add_task("Practicar GitHub")
+
+    print(manager.list_tasks())

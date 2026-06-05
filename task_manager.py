@@ -23,7 +23,7 @@ if __name__ == "__main__":
     manager = TaskManager()
 
     manager.add_task("Estudiar DevOps")
-    manager.add_task("Practicar GitHub")
+    manager.add_task("Practicar GitHub - Version A")
 
     manager.complete_task(0)
 

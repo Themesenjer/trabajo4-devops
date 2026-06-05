@@ -23,7 +23,11 @@ if __name__ == "__main__":
     manager = TaskManager()
 
     manager.add_task("Estudiar DevOps")
+<<<<<<< conflicto-b
     manager.add_task("Practicar GitHub - Version B")
+=======
+    manager.add_task("Practicar GitHub - Version A")
+>>>>>>> main
 
     manager.complete_task(0)
 
